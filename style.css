@@ -1,78 +1,21 @@
-/* Global Reset & Font */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { 
-    font-family: 'Inter', sans-serif; 
-    background-color: #0b0f19; /* Dark background */
-    color: #ffffff; 
-    text-align: center; 
+.pricing-section { padding: 60px 20px; background-color: #0b0f19; }
+.pricing-container { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
-
-/* Navbar */
-.navbar { padding: 20px; text-align: left; font-size: 24px; font-weight: 800; }
-
-/* Hero Section */
-.hero-section { padding: 50px 20px 30px; }
-.ai-badge { 
-    display: inline-block; 
-    padding: 8px 16px; 
-    background-color: rgba(255, 255, 255, 0.05); 
-    border-radius: 20px; 
-    font-size: 14px; 
-    color: #00e1ff; 
-    margin-bottom: 20px;
-    border: 1px solid rgba(0, 225, 255, 0.2);
-}
-h1 { font-size: 42px; font-weight: 800; line-height: 1.2; margin-bottom: 20px; }
-.text-gradient { 
-    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-}
-.subtitle { color: #a0aec0; max-width: 600px; margin: 0 auto 30px; font-size: 16px; line-height: 1.5; }
-
-/* Buttons */
-.button-group { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-button { font-family: 'Inter', sans-serif; font-weight: 600; cursor: pointer; border-radius: 8px; border: none; transition: 0.3s; }
-.btn-primary { background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%); color: white; padding: 15px 30px; font-size: 16px; width: 250px; }
-.btn-primary:hover { opacity: 0.9; }
-.btn-secondary { background: rgba(255, 255, 255, 0.05); color: white; border: 1px solid rgba(255, 255, 255, 0.1); padding: 15px 30px; font-size: 16px; width: 250px; }
-.btn-secondary:hover { background: rgba(255, 255, 255, 0.1); }
-
-/* Video Section */
-.video-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-video { 
-    border-radius: 16px; 
-    border: 1px solid rgba(255,255,255,0.1); 
-    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.15); /* Soft neon glow */
-}
-
-/* Pricing Section */
-.pricing-section { padding: 50px 20px; }
-.pricing-section h2 { margin-bottom: 30px; font-size: 28px; }
-.pricing-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .card { 
-    background-color: #111827; 
-    border: 1px solid rgba(255,255,255,0.05); 
+    background-color: #1a202c; /* Dark card background */
+    border: 1px solid #2d3748; 
     border-radius: 16px; 
-    padding: 30px 20px; 
-    width: 280px; 
+    padding: 40px 30px; 
+    width: 300px; 
+    text-align: center;
+    transition: transform 0.3s;
 }
-.card h3 { font-size: 20px; color: #a0aec0; margin-bottom: 10px; }
-.price { font-size: 32px; font-weight: 800; margin-bottom: 20px; }
-
-/* Customizing specific cards */
-.pro-card { border-color: #3a7bd5; box-shadow: 0 0 20px rgba(58, 123, 213, 0.2); }
-.premium-card { border-color: #ffd700; box-shadow: 0 0 20px rgba(255, 215, 0, 0.1); }
-.text-gold { color: #ffd700; }
-
-.btn-outline { background: transparent; color: white; border: 1px solid #4a5568; padding: 10px; width: 100%; }
-.btn-primary-small { background: #3a7bd5; color: white; padding: 10px; width: 100%; }
-.btn-gold-small { background: #ffd700; color: black; padding: 10px; width: 100%; }
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    h1 { font-size: 32px; }
-    .btn-primary, .btn-secondary { width: 100%; }
-    .pricing-container { flex-direction: column; align-items: center; }
-    .card { width: 100%; max-width: 350px; }
-}
+.card:hover { transform: translateY(-10px); border-color: #3a7bd5; }
+.price { font-size: 28px; font-weight: 800; margin: 20px 0; color: white; }
+.btn-primary-small { background: #3a7bd5; color: white; padding: 12px 20px; border-radius: 8px; border: none; width: 100%; cursor: pointer; }
+.btn-gold-small { background: #ffd700; color: black; font-weight: bold; padding: 12px 20px; border-radius: 8px; border: none; width: 100%; cursor: pointer; }
+.btn-outline { background: transparent; color: white; border: 1px solid #4a5568; padding: 12px 20px; border-radius: 8px; width: 100%; cursor: pointer; }
