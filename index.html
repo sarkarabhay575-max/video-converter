@@ -1,20 +1,39 @@
-<section class="pricing-section">
-    <h2>Choose Your Plan</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Video Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Text to Video Converter</h1>
+
+    <div class="video-container">
+        <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <div class="pricing-container">
         <div class="card">
             <h3>Basic</h3>
-            <p class="price">₹750 /mo</p>
-            <button class="btn-outline">Buy Basic</button>
+            <p id="price1">₹750 /mo</p>
+            <button>Buy Basic</button>
         </div>
-        <div class="card pro-card">
+        <div class="card">
             <h3>Pro</h3>
-            <p class="price">₹4,000 /6mo</p>
-            <button class="btn-primary-small">Buy Pro</button>
+            <p id="price2">₹4,000 /6mo</p>
+            <button>Buy Pro</button>
         </div>
-        <div class="card premium-card">
+        <div class="card">
             <h3>Premium</h3>
-            <p class="price">₹7,500 /yr</p>
-            <button class="btn-gold-small">Buy Premium</button>
+            <p id="price3">₹7,500 /yr</p>
+            <button>Buy Premium</button>
         </div>
     </div>
-</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
